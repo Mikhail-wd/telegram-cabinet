@@ -46,7 +46,7 @@ export default function Root() {
         console.log(navigate(-1))
     }
 
-    if (window.location === "/telegram-cabinet") {
+    if (window.location.pathname === "/telegram-cabinet") {
         if (window.Telegram && window.Telegram.WebApp) {
             window.Telegram.WebApp.ready();
             window.Telegram.WebApp.expand();
