@@ -27,41 +27,41 @@ const router = createBrowserRouter([
         element: <MainPage />
       },
       {
-        path: "/total_balance",
+        path: "/telegram-cabinet/total_balance",
         element: <BalancePage />
       },
       {
-        path: "/total_balance/:id",
+        path: "/telegram-cabinet/total_balance/:id",
         element: <WithdrawPage />,
         error: <Root />
       },
       {
-        path: "/last_transactions",
+        path: "/telegram-cabinet/last_transactions",
         element: <LastTransactions />
       },
       {
-        path: "/my_projects",
+        path: "/telegram-cabinet/my_projects",
         element: <ProjectsPage />
       },
       {
-        path: "/my_projects/*",
+        path: "/telegram-cabinet/my_projects/*",
         element: <EditingProjectPage />
       },
       {
-        path: "/invoice",
+        path: "/telegram-cabinet/invoice",
         element: <InvoicePage />
       },
       {
-        path: "/support",
+        path: "/telegram-cabinet/support",
         element: <SupportPage />
       },
       {
-        path: "/cashflow",
+        path: "/telegram-cabinet/cashflow",
         element: <CashflowPage />
       }
       ,
       {
-        path: "/profile",
+        path: "/telegram-cabinet/profile",
         element: <ProfilePage />
       }
     ]
