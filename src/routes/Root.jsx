@@ -43,23 +43,24 @@ export default function Root() {
     const navigate = useNavigate()
     function backStory() {
         navigate(-1)
+        console.log(navigate(-1))
     }
     useEffect(() => {
         if (window.Telegram && window.Telegram.WebApp) {
             window.Telegram.WebApp.ready();
             window.Telegram.WebApp.expand();
-            window.Telegram.WebApp.BackButton.onClick(backStory)
             window.Telegram.WebApp.setHeaderColor("#141723")
             window.Telegram.WebApp.setBackgroundColor("#141723")
             window.Telegram.WebApp.enableClosingConfirmation()
 
             if (window.location.pathname !== '/telegram-cabinet/') {
                 window.Telegram.WebApp.BackButton.show()
+                window.Telegram.WebApp.BackButton.onClick(backStory)
             } else {
                 window.Telegram.WebApp.BackButton.hide()
             }
         }
-    }, [])
+    }, [window.location.pathname])
     return (
         <AppState.Provider value={{ data: state, dispatch: dispatch }}>
             <ToastContainer
