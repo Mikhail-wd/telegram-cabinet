@@ -13,7 +13,7 @@ export default function FooterControl() {
     const context = useContext(AppState)
     return (
         <div className="mainFrame_footer-controls block">
-            <Link to={"/telegram-cabinet"} className="footer-btn">
+            <Link to={"/telegram-cabinet/"} className="footer-btn">
                 <img src={home} alt="home" className="button-img" />
             </Link>
             <Link to={"/telegram-cabinet/invoice"} className="footer-btn">
