@@ -45,26 +45,22 @@ export default function Root() {
     function backStory() {
         navigate(-1)
     }
-
     console.log(location.pathname)
     useEffect(() => {
         if (window.Telegram && window.Telegram.WebApp) {
-            if (location.pathname !== '/telegram-cabinet/') {
-                window.Telegram.WebApp.BackButton.show()
-                window.Telegram.WebApp.BackButton.onClick(backStory)
-                window.Telegram.WebApp.ready();
-                window.Telegram.WebApp.expand();
-                window.Telegram.WebApp.setHeaderColor("#141723")
-                window.Telegram.WebApp.setBackgroundColor("#141723")
-                window.Telegram.WebApp.enableClosingConfirmation()
-            } else {
-                window.Telegram.WebApp.BackButton.hide()
-                window.Telegram.WebApp.ready();
-                window.Telegram.WebApp.expand();
-                window.Telegram.WebApp.setHeaderColor("#141723")
-                window.Telegram.WebApp.setBackgroundColor("#141723")
-                window.Telegram.WebApp.enableClosingConfirmation()
-            }
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+            window.Telegram.WebApp.setHeaderColor("#141723")
+            window.Telegram.WebApp.setBackgroundColor("#141723")
+            window.Telegram.WebApp.BackButton.onClick(backStory)
+            window.Telegram.WebApp.enableClosingConfirmation()
+        }
+    }, [])
+    useEffect(() => {
+        if (location.pathname !== '/telegram-cabinet/') {
+            window.Telegram.WebApp.BackButton.show()
+        } else {
+            window.Telegram.WebApp.BackButton.hide()
         }
     }, [location.pathname])
     return (
