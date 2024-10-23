@@ -1,0 +1,31 @@
+.information-icon {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--small-btn-bg);
+}
+
+.information-icon>img {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.information-wrapper{
+    position: relative;
+    box-sizing: border-box;
+    width: 70dvw;
+    right: 60dvw;
+    top: -830px;
+    display: flex;
+    justify-content: end;
+    height: 800px;
+    flex-direction: column;
+}
+.information-popup {
+    height: fit-content;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--small-btn-bg);
+}

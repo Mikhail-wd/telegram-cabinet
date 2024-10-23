@@ -1,13 +1,210 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+@font-face {
+  font-family: Mukta;
+  src: url(./fonts/Mukta-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url(./fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+  font-family: Diabolic;
+  src: url(./fonts/DidactGothic-Regular.ttf);
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: Mulish, sans-serif;
+  --font-all: #dfdfdf;
+  --small-btn-bg: #414558;
+  --body-bg: #141723;
+  --element-bg: #273140;
+  --text-grey: #646774;
+  --sub-grad: linear-gradient(102.05deg, #05051c 40.6%, #080640f2 91.37%);
+  --main-grad: linear-gradient(100.57deg, #3006A4 12.93%, #FFA37B 121.02%);
+  --alte-grad: linear-gradient(102.05deg, #836DD6 40.6%, #FFA37B 91.37%);
+  --type1: Mukta;
+  --type2: Mulish;
+  --type3: Poppins;
+}
+
+body {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--body-bg);
+  color: var(--font-all);
+  font-family: var(--type3);
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: var(--text-grey);
+  text-decoration: none;
+  text-underline-offset: none;
+}
+
+.slice {
+  color: var(--text-grey);
+}
+
+.invoice-input {
+  color: white;
+  width: 100%;
+  font-size: 28px;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  border-bottom: solid 2px var(--text-grey)
+}
+
+a:visited {
+  color: inherit;
+}
+
+button {
+  color: var(--font-all);
+}
+
+hr {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.block {
+  width: 550px;
+  box-sizing: border-box;
+}
+
+.styled-block {
+  box-sizing: border-box;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: var(--element-bg);
+}
+
+.styled-block-small {
+  box-sizing: border-box;
+  padding: 11px;
+  border-radius: 20px;
+  background-color: var(--element-bg);
+}
+
+.button-img {
+  width: 28px;
+  height: 28px;
+}
+
+/* header */
+
+.mainFrame_header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.mainFrame_header>h1 {
+  margin: 0;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.mainFrame_header>h1>span:nth-child(1) {
+  font-size: 16px;
+  color: var(--text-grey);
+}
+
+.mainFrame_header-avatar {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #0400f0;
+  background-image: var(--main-grad)
+}
+
+/* content */
+.mainFrame_balance-button-and-money {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance-btn {
+  background: var(--main-grad);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-family: var(--type2);
+  font-weight: 600;
+  border: none;
+  letter-spacing: 0px;
+}
+
+.balance-btn:hover {
+  animation: 11s forwards linear alter-grad;
+}
+
+.mainFrame_balance-button-and-money>hr {
+  width: 90%;
+  color: var(--text-grey);
+}
+
+
+.mainFrame_balance-button-and-money>h2 {
+  font-size: 32px;
+}
+
+.utility-btn:hover {
+  color: var(--font-all);
+}
+
+.utility-btn>img {
+  border-radius: 13px;
+  background-color: var(--small-btn-bg);
+  padding: 14px;
+}
+
+.utility-btn>p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Activity */
+/* footer-controll */
+/* payment */
+
+
+@media screen and (max-width:650px) {
+  .block {
+    width: 95dvw;
+  }
+}
+
+@keyframes alter-grad {
+  0% {
+    background-position: 40% 100%;
+  }
+
+  100% {
+    background-position: 40% 10%;
+  }
 }

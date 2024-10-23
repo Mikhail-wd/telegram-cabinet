@@ -1,0 +1,28 @@
+.checkForPayment {
+    padding-bottom: 20px;
+}
+
+.checkForPayment>span:first-child {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.payment-done>div>h1 {
+    text-align: center;
+}
+.payment-done>div>p {
+    font-size: 18px;
+}
+.ckeck-box {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.my-applications_check-context {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}

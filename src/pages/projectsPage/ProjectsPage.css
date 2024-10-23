@@ -1,0 +1,21 @@
+.my-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 60px;
+}
+.my-projects_header {
+    font-size: 28px;
+    text-align: center;
+}
+.my-project_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.my-projects_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 25px;
+}

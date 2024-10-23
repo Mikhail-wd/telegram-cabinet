@@ -1,0 +1,30 @@
+.balance-plate {
+    padding: 25px;
+    border-radius: 20px;
+    border: solid 2px var(--text-grey);
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance-plate_leftCol {
+    max-width: 70%;
+}
+
+.balance-plate_leftCol>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.balance-plate_leftCol>div>span:first-child {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.balance-plate-edit-img {
+    width: 13px;
+    height:13px;
+    border-radius: 13px;
+    border: 2px solid var(--text-grey);
+    padding: 14px;
+}

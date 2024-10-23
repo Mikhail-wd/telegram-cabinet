@@ -1,0 +1,198 @@
+.mainFrame-invoice-formation {
+   padding-top: 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.invoice-selecting-params {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.invoce-currency {
+   width: 100%;
+   font-size: 20px;
+   border-radius: 20px;
+   padding: 10px 15px;
+}
+
+.invoice-currency-block {
+   display: flex;
+   justify-content: space-between;
+   padding: 4px 0px;
+}
+
+.invoce-formation {
+   display: block;
+   font-size: 18px;
+   font-weight: 600;
+   width: 100%;
+   color: rgb(255, 255, 255) !important;
+   text-decoration: underline;
+   text-align: center;
+   word-wrap: break-word;
+}
+
+.invoce-link-share {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.invoice-selecting-params>div>h3 {
+   margin: 0;
+   margin-bottom: 10px;
+}
+
+.btn-share {
+   border-radius: 20px;
+   margin-top: 20px;
+   padding: 12px 30px;
+   background-color: var(--small-btn-bg);
+}
+
+.currency-img {
+   background-repeat: no-repeat;
+   background-size: 100%;
+   width: 32px;
+   height: 32px;
+   padding: 12px;
+   border-radius: 40px;
+   border: solid 2px inherit;
+}
+
+.currency-img-active {
+   border: solid 2px var(--text-grey);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   width: 32px;
+   height: 32px;
+   padding: 12px;
+   border-radius: 40px;
+}
+
+.currency-img-active-payment {
+   border: solid 2px var(--text-grey);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   width: 64px;
+   height: 32px;
+   padding: 12px;
+   border-radius: 40px;
+}
+
+.currency-img-payment {
+   background-repeat: no-repeat;
+   background-size: 100%;
+   width: 64px;
+   height: 32px;
+   padding: 12px;
+   border-radius: 40px;
+   border: solid 2px inherit;
+}
+
+.invoice-context>ul {
+   font-size: 20px;
+   line-height: 32px;
+   width: 100%;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.invoice-context>ul>li>span:nth-child(1) {
+   font-size: 16px;
+}
+
+.invoice-context>ul>li {
+   letter-spacing: 0.2px;
+   display: flex;
+   justify-content: start;
+}
+
+.invoice-context>ul>li:last-child {
+   flex-wrap: wrap;
+}
+
+.invoice-context>ul>li>span:nth-child(2) {
+   border-bottom: dotted 2px var(--text-grey);
+   flex-grow: 5;
+   height: 24px;
+}
+
+.invoice-context>ul>li>span:nth-child(3) {
+   font-size: 24px;
+}
+
+.checkForPayment {
+   padding-bottom: 20px;
+}
+
+.checkForPayment>span:first-child {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 10px;
+}
+
+.ckeck-box {
+   background-repeat: no-repeat;
+   background-size: 100%;
+   display: block;
+   width: 20px;
+   height: 20px;
+}
+
+.invoice-input_selecting {
+   white-space: nowrap;
+   font-size: 22px;
+   border-bottom: solid 2px var(--text-grey);
+}
+
+.myProjectsSelecting {
+   font-size: 24px;
+   font-weight: 600;
+}
+
+.invoice_gate-info {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 0px;
+}
+
+.order-type {
+   display: flex;
+   flex-direction: column;
+   gap: 19px;
+}
+
+.order-type>h3 {
+   margin: 0;
+}
+
+.order-type_selected_List {
+   font-size: 24px;
+   font-weight: 600;
+}
+
+@media screen and (max-width: 410px) {
+   .invoice-context>ul {
+      font-size: 14px;
+   }
+
+   .invoice-context>ul>li>span:nth-child(3) {
+      font-size: 20px;
+   }
+
+   .invoice-context>ul>li>span:nth-child(1) {
+      font-size: 14px;
+   }
+}

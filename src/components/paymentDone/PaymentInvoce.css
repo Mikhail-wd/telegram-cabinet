@@ -1,0 +1,134 @@
+.payment-invoce-popup {
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    position: fixed;
+    height: 100dvh;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000008e;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.payment-done {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 60px;
+    animation-iteration-count: 1;
+    position: relative;
+    top: 40%;
+    animation: 0.8s  forwards fadein;
+}
+
+.payment-done-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.payment-done-title-info {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-grey);
+}
+
+.price {
+    margin-top: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.price>p:nth-child(1) {
+    font-size: 16px;
+    color: var(--text-grey);
+}
+
+.price>p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.payment-done-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+    align-items: start;
+}
+
+.payment-done-info-row {
+    width: 100%;
+    display: flex;
+    text-align: start;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.payment-done-info-row>span:nth-child(2) {
+    min-width: 47%;
+}
+
+.payment-done-btn {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.btn-done {
+    font-family: var(--type2);
+    border-radius: 20px;
+    padding: 12px 40px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: #0400f0;
+    background: var(--main-grad);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-repeat {
+    font-family: Mulish;
+    border-radius: 20px;
+    padding: 12px 40px;
+    border: 2px solid var(--element-bg);
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-done:hover,
+.btn-repeat:hover {
+    transform: scale(1.05);
+}
+
+.btn-repeat:hover {
+    border: 2px solid var(--text-grey);
+}
+
+
+
+@keyframes fadein {
+    0% {
+        transform: scale(0.65);
+        opacity: 0.5
+    }
+    100% {
+        top: 0;
+        transform: scale(1);
+        opacity: 1
+    }
+}

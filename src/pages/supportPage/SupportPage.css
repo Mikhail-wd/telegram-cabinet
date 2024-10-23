@@ -1,0 +1,22 @@
+.support-page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.support-page_title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.support-page_context {
+    font-size: 18px;
+    text-indent: 15px;
+}
+
+.support_link {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+
+}

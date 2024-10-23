@@ -1,0 +1,49 @@
+.cashflow-page_title {
+    text-align: center;
+}
+.cashflow-page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.cashflow-page_content>ul,.cashflow-page_context-help>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 20px;
+}
+.cashflow-page_content>ul>li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: baseline;
+}
+.cashflow-page_content>ul>li>span:nth-child(2) {
+    border-bottom: dotted 2px var(--text-grey);
+    margin: 0 10px;
+    flex-grow: 10;
+}
+.cashflow-page_content>ul>li>span:last-child,.cashflow-page_context-help>ul>li>span {
+    font-weight: 800;
+    font-size: 22px;
+}
+.cashflow-page_content>p{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+.cashflow-page_context-help>p:first-child {
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.cashflow-page_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+

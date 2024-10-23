@@ -1,0 +1,94 @@
+.mainFrame_header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.mainFrame_header>h1 {
+    margin: 0;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.mainFrame_header>h1>span:nth-child(1) {
+    font-size: 16px;
+    color: var(--text-grey);
+}
+
+.mainFrame_header-avatar {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #0400f0;
+    background-image: var(--main-grad)
+}
+
+/* content */
+.mainFrame_balance-button-and-money {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.balance-btn {
+    background: var(--main-grad);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-family: var(--type2);
+    font-weight: 600;
+    border: none;
+    letter-spacing: 0px;
+}
+
+.balance-btn:hover {
+    animation: 11s forwards linear alter-grad;
+}
+
+.mainFrame_balance-button-and-money>hr {
+    width: 90%;
+    color: var(--text-grey);
+}
+
+.mainFrame_balance-controls-button {
+    padding: 0 20px;
+    margin-top: 16px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.mainFrame_balance-button-and-money>h2 {
+    font-size: 32px;
+}
+
+.utility-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-grey);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+.utility-btn:hover {
+    color: var(--font-all);
+}
+
+.utility-btn>img {
+    border-radius: 13px;
+    background-color: var(--small-btn-bg);
+    padding: 14px;
+}
+
+.utility-btn>p {
+    margin: 0;
+    font-weight: 600;
+}

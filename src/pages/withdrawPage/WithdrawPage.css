@@ -1,0 +1,67 @@
+.whithdraw-page-content>span:first-child {
+    font-size: 30px;
+}
+
+.whithdraw-page-conten-data {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.withdraw-header {
+    padding-top: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.wallet-value {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.whithdraw-page-content {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: start;
+}
+
+.whithdraw-page-content>hr {
+    width: 100%;
+}
+
+.withdraw-controller {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.withdraw-controller-input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.withdraw-warning {
+    display: block;
+    font-size: 14px;
+    color: var(--text-grey);
+    text-align: left;
+    gap: 5px;
+    padding: 3px 0px;
+    line-height: 16px;
+}
+
+.withdraw-btc-accept {
+    border-radius: 20px;
+    font-size: 22px;
+    border: none;
+    padding: 10px;
+    background-image: var(--main-grad)
+}

@@ -1,0 +1,40 @@
+.mainFraim_lastActiviti-body-element:hover {
+    border: solid 2px var(--small-btn-bg);
+}
+
+.mainFraim_lastActiviti-body-element {
+    border: solid 2px transparent;
+}
+
+.mainFrame_lastActiviti-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: baseline;
+}
+
+.mainFrame_lastActiviti-header>div:nth-child(1) {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.mainFrame_lastActiviti-header>a:nth-child(2) {
+    font-size: 14px;
+    color: var(--text-grey);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.mainFrame_lastActiviti-header>a:nth-child(2):hover {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.mainFrame_lastActiviti-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 14px;
+}

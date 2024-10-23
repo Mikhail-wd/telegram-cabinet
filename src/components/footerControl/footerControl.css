@@ -1,0 +1,37 @@
+.mainFrame_footer-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 3%;
+    z-index: 10;
+    border: solid 2px var(--small-btn-bg);
+    box-sizing: border-box;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: var(--element-bg);
+}
+
+.footer-btn,
+.footer-btn-big {
+    display: flex;
+    transition: 0.3s ease-in-out;
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.footer-btn:hover {
+    padding: 8px;
+    border-radius: 14px;
+    background-color: var(--small-btn-bg);
+}
+
+.footer-btn-big:hover {}
+
+.footer-btn-big {
+    padding: 10px;
+    border-radius: 14px;
+    background-color: #0400f0;
+    background-image: var(--main-grad);
+}

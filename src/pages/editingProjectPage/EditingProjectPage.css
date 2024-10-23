@@ -1,0 +1,109 @@
+.editing-project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding-top: 60px;
+}
+
+.editing-project-page_title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.editing-project-page_content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.edit-project-page_description {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.edit-project-page_description>p {
+    font-size: 22px;
+}
+
+.edit-description {
+    text-decoration: underline;
+    color: var(--text-grey);
+}
+
+.edit-project-page_link {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.edit-project-page_link>p {
+    font-size: 22px;
+}
+
+.edit-project-link {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    word-break: break-all;
+}
+
+.edit-project_status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 18px;
+}
+
+.edit-project_status>p {
+    font-size: 22px;
+}
+
+.edit-project_status_active {
+    color: green;
+}
+
+.edit-project_status_pending {
+    color: var(--text-grey)
+}
+
+
+.edit-project_api>p,
+.edit-project_key>p,
+.edit-project_token>p {
+    font-size: 22px;
+}
+
+.edit-project_api>span {
+    word-break: break-all;
+}
+
+.edit-project_api,
+.edit-project_key,
+.edit-project_token,
+.edit-project_buttons {
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.edit-project_token_warn {
+    font-size: 14px;
+    color: var(--text-grey);
+}
+.edit-project_button {
+    border-radius: 20px;
+    border: 1px solid var(--text-grey);
+    background-color: transparent;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 20px;
+}
