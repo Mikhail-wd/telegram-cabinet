@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { useState, createContext, useContext, useReducer } from 'react';
+import { useState, createContext, useReducer, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import FooterControl from "../components/footerControl/footerControl";
 import 'react-toastify/dist/ReactToastify.css';
@@ -40,6 +40,18 @@ export default function Root() {
     const [compState, setCompState] = useState({
         page: "main_page"
     })
+
+    useEffect(() => {
+        if (window.Telegram && window.Telegram.WebApp) {
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+            window.Telegram.WebApp.BackButton.show()
+            window.Telegram.WebApp.setHeaderColor("#141723")
+            window.Telegram.WebApp.setBackgroundColor("#141723")
+            window.Telegram.WebApp.enableClosingConfirmation()
+            console.log(window.Telegram.WebApp.BackButton)
+        }
+    }, [])
     return (
         <AppState.Provider value={{ data: state, dispatch: dispatch }}>
             <ToastContainer

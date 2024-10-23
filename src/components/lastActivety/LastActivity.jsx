@@ -15,7 +15,7 @@ export default function LastActivety() {
                     <div>
                         Last Transactions
                     </div>
-                    <Link to={"/last_transactions"}>See All</Link>
+                    <Link to={"telegram-cabinet/last_transactions"}>See All</Link>
                     {/* <div onClick={() => context.dispatch({ type: "switch_page", payload: "lastActivety_page" })}>
                         See All
                     </div> */}
