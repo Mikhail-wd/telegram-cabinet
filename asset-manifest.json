@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/telegram-cabinet/static/css/main.34374e49.css",
-    "main.js": "/telegram-cabinet/static/js/main.b30edf6a.js",
+    "main.js": "/telegram-cabinet/static/js/main.0f46c3ca.js",
     "static/media/Mukta-Regular.ttf": "/telegram-cabinet/static/media/Mukta-Regular.044d4dd07d7636695eda.ttf",
     "static/media/DidactGothic-Regular.ttf": "/telegram-cabinet/static/media/DidactGothic-Regular.37c8a8ed522192cd4de5.ttf",
     "static/media/Poppins-Regular.ttf": "/telegram-cabinet/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -34,10 +34,10 @@
     "static/media/send.svg": "/telegram-cabinet/static/media/send.fe4c2f37039c4cd1e1d222e40603b8aa.svg",
     "static/media/unchecked.svg": "/telegram-cabinet/static/media/unchecked.891592aeed418d18f5d5935c10e1753b.svg",
     "main.34374e49.css.map": "/telegram-cabinet/static/css/main.34374e49.css.map",
-    "main.b30edf6a.js.map": "/telegram-cabinet/static/js/main.b30edf6a.js.map"
+    "main.0f46c3ca.js.map": "/telegram-cabinet/static/js/main.0f46c3ca.js.map"
   },
   "entrypoints": [
     "static/css/main.34374e49.css",
-    "static/js/main.b30edf6a.js"
+    "static/js/main.0f46c3ca.js"
   ]
 }
