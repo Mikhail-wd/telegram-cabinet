@@ -19,12 +19,11 @@ import './index.css';
 
 const router = createBrowserRouter([
   {
-    path: "telegram-cabinet/",
+    path: "/telegram-cabinet",
     element: <Root />,
     children: [
       {
-        index: true,
-        path: "telegram-cabinet/",
+        path: "/telegram-cabinet",
         element: <MainPage />
       },
       {
