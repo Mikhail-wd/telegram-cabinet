@@ -49,12 +49,14 @@ export default function Root() {
     console.log(location.pathname)
     useEffect(() => {
         if (location.pathname !== '/telegram-cabinet/') {
-            window.Telegram.WebApp.BackButton.show()
-            window.Telegram.WebApp.BackButton.onClick(backStory)
+            return (() => {
+                window.Telegram.WebApp.BackButton.show()
+                window.Telegram.WebApp.BackButton.onClick(backStory)
+            })
         } else {
             window.Telegram.WebApp.BackButton.hide()
         }
-    },[location.pathname])
+    }, [location.pathname])
     useEffect(() => {
         if (window.Telegram && window.Telegram.WebApp) {
             window.Telegram.WebApp.ready();
