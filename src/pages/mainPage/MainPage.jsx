@@ -18,7 +18,7 @@ export default function MainPage() {
             }
             <div className="mainFrame_header block ">
                 <h1><span>Welcome,</span><br /><span>Mike Joe</span></h1>
-                <Link to={"/profile"} className="mainFrame_header-avatar"></Link>
+                <Link to={"/telegram-cabinet/profile"} className="mainFrame_header-avatar"></Link>
             </div>
             <div className="mainFrame_balance block styled-block">
                 <div className="mainFrame_balance-button-and-money">
@@ -31,15 +31,15 @@ export default function MainPage() {
                         <img src={send} alt="send" className="button-img" />
                         <p>Cashflow</p>
                     </Link> */}
-                    <Link to={"/invoice"} className="utility-btn">
+                    <Link to={"/telegram-cabinet/invoice"} className="utility-btn">
                         <img src={plus} alt="plus" className="button-img" />
                         <p>Invoice </p>
                     </Link>
-                    <Link to={"/total_balance"} className="utility-btn ">
+                    <Link to={"/telegram-cabinet/total_balance"} className="utility-btn ">
                         <img src={wallet} alt="wallet" className="button-img" />
                         <p>Balance</p>
                     </Link>
-                    <Link to={"/my_projects"} className="utility-btn">
+                    <Link to={"/telegram-cabinet/my_projects"} className="utility-btn">
                         <img src={moar} alt="MOAR" className="button-img" />
                         <p>Projects</p>
                     </Link>

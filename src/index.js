@@ -23,6 +23,7 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
+        index: true,
         path: "/telegram-cabinet",
         element: <MainPage />
       },
