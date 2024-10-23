@@ -66,7 +66,7 @@ export default function Root() {
                 window.Telegram.WebApp.enableClosingConfirmation()
             }
         }
-    }, [])
+    }, [location.pathname])
     return (
         <AppState.Provider value={{ data: state, dispatch: dispatch }}>
             <ToastContainer
