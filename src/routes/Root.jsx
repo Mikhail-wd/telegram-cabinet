@@ -45,9 +45,16 @@ export default function Root() {
         navigate(-1)
         console.log(navigate(-1))
     }
-    
+
     if (window.location === "/telegram-cabinet") {
-        window.Telegram.WebApp.BackButton.hide()
+        if (window.Telegram && window.Telegram.WebApp) {
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+            window.Telegram.WebApp.setHeaderColor("#141723")
+            window.Telegram.WebApp.setBackgroundColor("#141723")
+            window.Telegram.WebApp.BackButton.hide()
+            window.Telegram.WebApp.enableClosingConfirmation()
+        }
     }
     useEffect(() => {
         if (window.Telegram && window.Telegram.WebApp) {
