@@ -14,7 +14,7 @@ export default function ProjetPlate({ name = "Empty string" }) {
                     <span>Created : 25-07-2020</span>
                 </div>
             </div>
-            <Link to={`/${name}`} state={{ name: name, data: "25-07-2020" }} className='balance-plate_leftRight'>
+            <Link to={`/telegram-cabinet/${name}`} state={{ name: name, data: "25-07-2020" }} className='balance-plate_leftRight'>
                 <img src={arrowRight} alt="delete" className="balance-plate-edit-img" />
             </Link>
         </div >
