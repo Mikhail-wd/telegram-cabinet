@@ -19,49 +19,49 @@ import './index.css';
 
 const router = createBrowserRouter([
   {
-    path: "telegram-cabinet/",
+    path: "/telegram-cabinet",
     element: <Root />,
     children: [
       {
-        path: "telegram-cabinet/",
+        index: true,
         element: <MainPage />
       },
       {
-        path: "telegram-cabinet/total_balance",
+        path: "/total_balance",
         element: <BalancePage />
       },
       {
-        path: "telegram-cabinet/total_balance/:id",
+        path: "/total_balance/:id",
         element: <WithdrawPage />,
         error: <Root />
       },
       {
-        path: "telegram-cabinet/last_transactions",
+        path: "/last_transactions",
         element: <LastTransactions />
       },
       {
-        path: "telegram-cabinet/my_projects",
+        path: "my_projects",
         element: <ProjectsPage />
       },
       {
-        path: "telegram-cabinet/my_projects/*",
+        path: "/my_projects*",
         element: <EditingProjectPage />
       },
       {
-        path: "telegram-cabinet/invoice",
+        path: "/invoice",
         element: <InvoicePage />
       },
       {
-        path: "telegram-cabinet/support",
+        path: "/support",
         element: <SupportPage />
       },
       {
-        path: "telegram-cabinet/cashflow",
+        path: "/cashflow",
         element: <CashflowPage />
       }
       ,
       {
-        path: "telegram-cabinet/profile",
+        path: "/profile",
         element: <ProfilePage />
       }
     ]

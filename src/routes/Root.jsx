@@ -54,7 +54,7 @@ export default function Root() {
             window.Telegram.WebApp.enableClosingConfirmation()
             console.log(window.Telegram.WebApp.BackButton)
         }
-    }, [])
+    })
     return (
         <AppState.Provider value={{ data: state, dispatch: dispatch }}>
             <ToastContainer
