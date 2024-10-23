@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useHistory } from "react-router-dom";
 import { useState, createContext, useReducer, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import FooterControl from "../components/footerControl/footerControl";
@@ -40,8 +40,9 @@ export default function Root() {
     const [compState, setCompState] = useState({
         page: "main_page"
     })
-    function backStory(){
-        window.history.back()
+    const history = useHistory()
+    function backStory() {
+        history.goBack()
     }
     useEffect(() => {
         if (window.Telegram && window.Telegram.WebApp) {
