@@ -47,6 +47,7 @@ export default function Root() {
     }
     console.log(location.pathname)
     useEffect(() => {
+        console.log("~~~~RenderedWebApp~~~~")
         if (window.Telegram && window.Telegram.WebApp) {
             window.Telegram.WebApp.ready();
             window.Telegram.WebApp.expand();
