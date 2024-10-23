@@ -40,11 +40,14 @@ export default function Root() {
     const [compState, setCompState] = useState({
         page: "main_page"
     })
-
+    function backStory(){
+        window.history.back()
+    }
     useEffect(() => {
         if (window.Telegram && window.Telegram.WebApp) {
             window.Telegram.WebApp.ready();
             window.Telegram.WebApp.expand();
+            window.Telegram.WebApp.BackButton.onClick(backStory)
             window.Telegram.WebApp.BackButton.show()
             window.Telegram.WebApp.setHeaderColor("#141723")
             window.Telegram.WebApp.setBackgroundColor("#141723")
