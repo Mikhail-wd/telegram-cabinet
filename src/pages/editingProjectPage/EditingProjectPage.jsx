@@ -18,8 +18,8 @@ export default function EditingProjectPage() {
     }, [])
 
     return (
-        <div className='editing-project-page'>
-            <p className='editing-project-page_title'>{passedState.state.name}</p>
+        <div className='editing-project-page block'>
+            <div className='editing-project-page_title'><h1>{passedState.state.name}</h1></div>
             <div className='editing-project-page_content styled-block'>
                 {/* <div className='edit-project-page_description'>
                     <p>Description :</p>

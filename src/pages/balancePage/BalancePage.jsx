@@ -27,7 +27,7 @@ export default function BalancePage() {
                     </div>
                 </div>
             </div>
-            <BalanceController />
+            {/* <BalanceController /> */}
             <BalancePlate value="Eth" />
             <BalancePlate value="Usdt" />
             <BalancePlate value="Btc" />

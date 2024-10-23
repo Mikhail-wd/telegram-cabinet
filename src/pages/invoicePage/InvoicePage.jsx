@@ -26,7 +26,7 @@ export default function InvoicePage() {
         tagValue: ""
     }
     const [compState, setCompState] = useState({
-        productName: null,
+        productName: "",
         myProject: null,
         activeCurrency: null,
         activePayment: null,
@@ -119,9 +119,19 @@ export default function InvoicePage() {
         setCompState({ ...compState, myProject: value })
     }
     function selectOrderType(value) {
-        setCompState({ ...compState, orderTypeSelected: value })
+        console.log(value)
+        setCompState({
+            ...compState,
+            orderTypeSelected: value,
+            productName: "",
+            email: "",
+            activePayment: null,
+            activeCurrency: null,
+            total: null,
+            orderCheck: !compState.orderCheck 
+        })
     }
-    function ckeckForOrderType(e) {
+    function ckeckForOrderType() {
         setCompState({ ...compState, orderCheck: !compState.orderCheck })
     }
     // function formatingData() {
@@ -394,10 +404,12 @@ export default function InvoicePage() {
                 console.warn("Error in invoice switch")
         }
     }
-
+    console.log(compState)
     return (
-        <div className="mainFrame-invoice-formation">
-            <h1>Invoice Formation</h1>
+        <div className="mainFrame-invoice-formation block">
+            <div className="mainFrame-invoice-formation_title">
+                <h1>Invoice Formation</h1>
+            </div>
             <div className="invoice-context block styled-block">
                 <ul>
                     {compState.orderTypeSelected === "ORDER" && compState.gate ?

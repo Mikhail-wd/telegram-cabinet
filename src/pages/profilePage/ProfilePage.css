@@ -1,13 +1,20 @@
 .profile {
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: start;
+    gap: 30px;
+    padding-bottom: 120px;
 }
 
-.profile_title>h1 {
-    margin: 0;
-    text-align: center;
+.profile_title {
+    text-align: left;
+    font-weight: 600;
+    background-image: var(--main-grad);
+    color: transparent;
+    display: inline-block;
+    width: max-content;
+    background-clip: text;
+    width: fit-content;
 }
 
 .profile_names-block {

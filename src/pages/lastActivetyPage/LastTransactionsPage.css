@@ -1,9 +1,9 @@
 .mainFrame_lastActiviti-page {
-    height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding-top: 60px;
+    gap: 30px;
+    padding-bottom: 120px;
 }
 
 .mainFraim_lastActiviti-body-element:hover {
@@ -22,7 +22,6 @@
 .mainFrame_lastActiviti-header-alter {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
 }
 .mainFrame_lastActiviti-header>div:nth-child(1) {
     font-size: 18px;
@@ -40,7 +39,6 @@
     justify-content: start;
     align-items: center;
     gap: 20px;
-    margin-top: 14px;
 }
 
 .mainFraim_lastActiviti-body-element {
@@ -88,7 +86,13 @@
 }
 
 /* Extra */
-.mainFrame_lastActiviti-header-alter>.mainFrame_header-extra:nth-child(1) {
-    font-size: 28px;
+.mainFrame_header-extra:nth-child(1) {
+    text-align: left;
     font-weight: 600;
+    background-image: var(--main-grad);
+    color: transparent;
+    display: inline-block;
+    width: max-content;
+    background-clip: text;
+    width: fit-content;
 }

@@ -1,18 +1,27 @@
 .my-projects {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     gap: 30px;
-    padding-top: 60px;
+    padding-bottom: 120px;
 }
 .my-projects_header {
-    font-size: 28px;
-    text-align: center;
+    text-align: left;
+    font-weight: 600;
+    background-image: var(--main-grad);
+    color: transparent;
+    display: inline-block;
+    width: max-content;
+    background-clip: text;
+    width: fit-content;
 }
+
 .my-project_content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .my-projects_list {
     display: flex;
     flex-direction: column;

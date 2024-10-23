@@ -1,12 +1,19 @@
 .support-page {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     gap: 30px;
+    padding-bottom: 120px;
 }
 
 .support-page_title {
-    text-align: center;
+    text-align: left;
     font-weight: 600;
+    background-image: var(--main-grad);
+    color: transparent;
+    display: inline-block;
+    width: max-content;
+    background-clip: text;
 }
 
 .support-page_context {

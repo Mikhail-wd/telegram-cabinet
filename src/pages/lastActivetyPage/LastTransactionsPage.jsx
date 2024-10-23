@@ -10,14 +10,16 @@ import "./LastTransactionsPage.css"
 export default function LastActivetyPage() {
     const context = useContext(AppState)
     return (
-        <>        
+        <>
             {context.data.invose ?
                 <PaymentInvoce /> : null
             }
             <div className="mainFrame_lastActiviti-page block">
                 <div className="mainFrame_lastActiviti-header-alter">
                     <div className="mainFrame_header-extra">
-                        Last Transactions
+                        <h1>
+                            Last Transactions
+                        </h1>
                     </div>
                     <div className="footer-btn">
                         <img className="button-img" src={calendar} alt="calendar" />

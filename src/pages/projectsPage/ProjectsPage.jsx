@@ -5,7 +5,9 @@ import './ProjectsPage.css'
 export default function ProjectsPage() {
     return (
         <div className='my-projects block'>
-            <div className='my-projects_header'>My Projects</div>
+            <div className='my-projects_header'>
+                <h1>My Projects</h1>
+            </div>
             {/* Убрать согласно правкам 22 oct
             <div className='my-project_content styled-block'>
                 <p>Here you can edit and manage you'r projects:</p>

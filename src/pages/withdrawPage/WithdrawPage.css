@@ -1,3 +1,21 @@
+.mainFraim {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    padding-bottom: 120px;
+}
+.withdraw-header {
+    text-align: left;
+    font-weight: 600;
+    background-image: var(--main-grad);
+    color: transparent;
+    display: inline-block;
+    width: max-content;
+    background-clip: text;
+    width: fit-content;
+}
+
 .whithdraw-page-content>span:first-child {
     font-size: 30px;
 }
@@ -7,11 +25,6 @@
     line-height: 30px;
 }
 
-.withdraw-header {
-    padding-top: 60px;
-    text-align: center;
-    font-weight: 600;
-}
 
 .wallet-value {
     text-transform: uppercase;
