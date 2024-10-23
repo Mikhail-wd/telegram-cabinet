@@ -74,7 +74,7 @@ export default function BalancePlate({ value = "Eth", data }) {
             <div className="mainFrame_balance-page_item block" >
                 <div className="mainFrame_balance-page_item-leftCol">
                     {switchValue(value)}
-                    <Link to={`/${value}`} state={{ walletName: switchCurrency(value), balance: randomNumb }} >
+                    <Link to={`/telegram-cabinet/total_balance/${value}`} state={{ walletName: switchCurrency(value), balance: randomNumb }} >
                     <img src={arrowRight} className="arrow-next-page" />
                     </Link>                    
                 </div>
