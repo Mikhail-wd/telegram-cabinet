@@ -55,7 +55,7 @@ p {
 }
 
 a {
-  color: var(--text-grey);
+  color: white;
   text-decoration: none;
   text-underline-offset: none;
 }
