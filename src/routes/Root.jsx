@@ -52,14 +52,14 @@ export default function Root() {
             window.Telegram.WebApp.setHeaderColor("#141723")
             window.Telegram.WebApp.setBackgroundColor("#141723")
             window.Telegram.WebApp.enableClosingConfirmation()
-            
-            if (window.location.pathname !== '/telegram-cabinet') {
+
+            if (window.location.pathname !== '/telegram-cabinet/') {
                 window.Telegram.WebApp.BackButton.show()
             } else {
                 window.Telegram.WebApp.BackButton.hide()
             }
         }
-    }, [window.location.pathname])
+    }, [])
     return (
         <AppState.Provider value={{ data: state, dispatch: dispatch }}>
             <ToastContainer

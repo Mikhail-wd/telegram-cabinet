@@ -11,6 +11,7 @@
     justify-content: space-between;
     padding: 0 20px;
     align-items: baseline;
+    margin-bottom: 12px;
 }
 
 .mainFrame_lastActiviti-header>div:nth-child(1) {
