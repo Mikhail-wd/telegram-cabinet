@@ -44,7 +44,6 @@ export default function Root() {
     const navigate = useNavigate()
     function backStory() {
         navigate(-1)
-        console.log(navigate(-1)=== true)
     }
 
     console.log(location.pathname)
@@ -55,7 +54,7 @@ export default function Root() {
         } else {
             window.Telegram.WebApp.BackButton.hide()
         }
-    })
+    },[location.pathname])
     useEffect(() => {
         if (window.Telegram && window.Telegram.WebApp) {
             window.Telegram.WebApp.ready();
