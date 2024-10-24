@@ -122,10 +122,13 @@
 
 /*Calendar*/
 .lastActivety-calendar {
+    width: 95dvw !important;
+    max-width: 550px !important;
+    margin: 0px auto;
     font-size: 20px;
     font-family: var(--type3) !important;
     position: absolute;
-    right: 0;
+    right: auto;
     top: 50px;
     background: var(--element-bg) !important;
     border: solid 1px var(--text-grey) !important;
