@@ -80,7 +80,7 @@ export default function Root() {
             />
             <div className="mainFrame">
                 <Outlet />
-                <FooterControl />
+                {/* <FooterControl /> */}
             </div>
         </AppState.Provider>
     );

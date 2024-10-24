@@ -31,13 +31,13 @@
   --element-bg: #273140;
   --text-grey: #646774;
   --sub-grad: linear-gradient(102.05deg, #05051c 40.6%, #080640f2 91.37%);
-  --main-grad: linear-gradient(100.57deg, #3006A4 12.93%, #FFA37B 121.02%);
+  --main-grad: linear-gradient(100.57deg, #735eaf 12.93%, #FFA37B 121.02%);
   --alte-grad: linear-gradient(102.05deg, #836DD6 40.6%, #FFA37B 91.37%);
-  --type1: Mukta;
-  --type2: Mulish;
-  --type3: Poppins;
+  --type1: Mukta, sans-serif;
+  --type2: Mulish, sans-serif;
+  --type3: Poppins, sans-serif;
 }
-
+/*4c358a*/
 body {
   overflow-x: hidden;
   scrollbar-width: thin;
@@ -108,10 +108,12 @@ p {
   border-radius: 20px;
   background-color: var(--element-bg);
 }
+
 h1 {
   padding: 0;
   margin: 0;
 }
+
 .button-img {
   width: 28px;
   height: 28px;
