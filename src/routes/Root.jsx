@@ -55,6 +55,7 @@ export default function Root() {
             window.Telegram.WebApp.setBackgroundColor("#141723")
             window.Telegram.WebApp.BackButton.onClick(backStory)
             window.Telegram.WebApp.enableClosingConfirmation()
+            console.log(window.Telegram.WebApp.initDataUnsafe)
         }
     }, [])
     useEffect(() => {

@@ -121,6 +121,7 @@
 }
 
 /*Calendar*/
+/*тело*/
 .lastActivety-calendar {
     width: 95dvw !important;
     max-width: 550px !important;
@@ -135,28 +136,31 @@
     border-radius: 8px;
 }
 
+/*число сейчас*/
 .react-calendar__tile--now {
     background-color: var(--body-bg) !important;
     border: solid 1px var(--text-grey) !important;
     border-radius: 8px;
 }
 
-.react-calendar__tile {}
-
+/*заголовок навигационной панели*/
 .react-calendar__navigation__label {
     background-color: grey !important;
     border-radius: 8px !important;
 }
 
+/*ховер эффект даты месяца календаря*/
 .react-calendar__tile:enabled:hover {
     border-radius: 8px !important;
     background-color: var(--small-btn-bg);
 }
 
+/*дата начала отсчета и конца*/
 .react-calendar__tile--active:enabled:focus {
     background: var(--small-btn-bg) !important;
 }
 
+/*ховер выделение  От и До*/
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
     border-radius: 8px !important;
@@ -178,16 +182,19 @@
     text-transform: capitalize;
 }
 
+/*тело с цифрами месяца*/
 .react-calendar__month-view__days {
     gap: 3px 1px;
     justify-content: space-around;
     padding-bottom: 6px;
 }
 
+/*елемент , день, тела месяца с цифрами*/
 .react-calendar__month-view__days__day {
     max-width: 13% !important;
 }
 
+/*ховер эффект навигации календаря*/
 .react-calendar__navigation__label:hover,
 .react-calendar__navigation__arrow:hover {
     background-color: var(--text-grey) !important;
@@ -212,8 +219,6 @@
     background-color: inherit !important;
 }
 
-.calendar__year-view__months__month>abbr {}
-
 .react-calendar__year-view__months__month::before {
     content: "";
     display: block;
@@ -221,11 +226,11 @@
     position: relative;
 }
 
-.react-calendar__century-view__decades__decade {
+.react-calendar__decade-view__years__year {
     padding: 4px !important;
 }
 
-.react-calendar__decade-view__years__year {
+.react-calendar__century-view__decades__decade {
     padding: 4px !important;
 }
 
