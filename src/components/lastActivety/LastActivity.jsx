@@ -7,7 +7,6 @@ import netflix from "../../img/netflix.svg"
 
 export default function LastActivety() {
     const context = useContext(AppState)
-    console.log(context)
     return (
         <>
             <div className="mainFrame_lastActiviti block">

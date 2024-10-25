@@ -50,7 +50,6 @@ export default function LastActivetyPage() {
                 startDate: compState.requestRange[0],
                 endDate: compState.requestRange[1]
             })
-            console.log(compState.requestRange[1])
         }
     }, [compState.requestRange])
     return (
