@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/telegram-cabinet/static/css/main.03f29b32.css",
+    "main.js": "/telegram-cabinet/static/js/main.ae160784.js",
+    "static/media/Mukta-Regular.ttf": "/telegram-cabinet/static/media/Mukta-Regular.044d4dd07d7636695eda.ttf",
+    "static/media/DidactGothic-Regular.ttf": "/telegram-cabinet/static/media/DidactGothic-Regular.37c8a8ed522192cd4de5.ttf",
+    "static/media/Poppins-Regular.ttf": "/telegram-cabinet/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/paypal.png": "/telegram-cabinet/static/media/paypal.b321e159e42f0ae8daeb.png",
+    "static/media/Mulish-Regular.ttf": "/telegram-cabinet/static/media/Mulish-Regular.d3d302e1573fb1c8db5b.ttf",
+    "static/media/bgSprite3.png": "/telegram-cabinet/static/media/bgSprite3.11a9f5d6927d6f80f64d.png",
+    "static/media/productsans.ttf": "/telegram-cabinet/static/media/productsans.7441ccce8084f727713c.ttf",
+    "static/media/tron.png": "/telegram-cabinet/static/media/tron.6f7b242134195411a6eb.png",
+    "static/media/tether.png": "/telegram-cabinet/static/media/tether.094ce3115d1e50623989.png",
+    "static/media/ethereum.png": "/telegram-cabinet/static/media/ethereum.c6cffe78f0c6abc85da9.png",
+    "static/media/binance.png": "/telegram-cabinet/static/media/binance.73ba64c516459a3a6ebf.png",
+    "static/media/calendar.svg": "/telegram-cabinet/static/media/calendar.008686fa5890064ff5b5894e8d676bff.svg",
+    "static/media/netflix.svg": "/telegram-cabinet/static/media/netflix.e62079630c00c7315ce0ab5eaab6133e.svg",
+    "static/media/profile.svg": "/telegram-cabinet/static/media/profile.a46e30a8c08ac3e264a33d737174d6fc.svg",
+    "static/media/coins.svg": "/telegram-cabinet/static/media/coins.17c7922beb4522dd96e6d2dfe73d3df5.svg",
+    "static/media/arrowRight.svg": "/telegram-cabinet/static/media/arrowRight.a6ec115a99578446ae019946265cb03d.svg",
+    "static/media/wallet.svg": "/telegram-cabinet/static/media/wallet.b82f57137d9d1a1d08dff75463058775.svg",
+    "static/media/arrowUp.svg": "/telegram-cabinet/static/media/arrowUp.6bbc65339660a398c6575c364e25375e.svg",
+    "static/media/more.svg": "/telegram-cabinet/static/media/more.06fa2ff831af03e69c6ebbb06e5170b6.svg",
+    "static/media/info.svg": "/telegram-cabinet/static/media/info.30af43e0ab622e7a0404a24abba0a3a7.svg",
+    "index.html": "/telegram-cabinet/index.html",
+    "static/media/edit.svg": "/telegram-cabinet/static/media/edit.ed7c7678b45dc679194f30acb96faac1.svg",
+    "static/media/plus.svg": "/telegram-cabinet/static/media/plus.5f42e0440fc717359df8dc35b999fcf0.svg",
+    "static/media/checked.svg": "/telegram-cabinet/static/media/checked.966cfd75dda7cf9df216db8b535b50fb.svg",
+    "static/media/unchecked.svg": "/telegram-cabinet/static/media/unchecked.891592aeed418d18f5d5935c10e1753b.svg",
+    "main.03f29b32.css.map": "/telegram-cabinet/static/css/main.03f29b32.css.map",
+    "main.ae160784.js.map": "/telegram-cabinet/static/js/main.ae160784.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03f29b32.css",
+    "static/js/main.ae160784.js"
+  ]
+}
